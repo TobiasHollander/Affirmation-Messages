@@ -1,11 +1,16 @@
+/* Style Default Reset */
 html {
+    /* Text Styles */
+    font-size: 16px;
+    font-family: 'Lexend Deca', san-serif;
+    /* Layout */
     margin: 0;
     padding: 0;
     display:flex;
     justify-content: center;
-    font-size: 16px;
 }
 
+/* Layout */
 body {
     background-image: url("../images/wisteria.jpg");
     background-repeat: no-repeat;
@@ -21,15 +26,26 @@ body {
 }
 
 header {
-    border: 2px solid white;
+    background-image: url("../images/banner.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     padding: 0 0.625rem;
+    width: 100%;
+    height: 18.75rem;
+    text-align: center;
+    margin-top: 0.3125rem; /* 5px */
+    margin-bottom: 0.625rem; /* 10px */
 }
 
 main {
-    background-color: rgba(218,204,246,0.4);
+    box-shadow: 0 0 0.3125rem 0.3125rem rgba(231,223,248,0.6);
+    background-color: rgba(231,223,248,0.6);
+    /* background-color: rgba(218,204,246,0.4);
+    box-shadow: 0 0 5px 5px rgba(218,204,246,0.4); */
     display: flex;
     flex-direction:column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 75%;
     height: 100vh; /* 100% of the viewport height */
@@ -38,25 +54,75 @@ main {
 }
 
 section {
-    border: 2px solid white;
     display: flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
+    padding: 0.625rem; /* 10px */
+    margin: 0.625rem; /* 10px */
+}
+
+#message-section {
     width: 100%;
-    height: auto;
-    padding: 0.625rem;
-    margin: 0.625rem;
+    height: 75%;
+    background-image: url("../images/frame.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 div {
-    border: 2px solid blue;
     display: flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    width: 75%;
-    height: 75%;
-    padding: 0.625rem;
-    margin: 0.625rem;
+    width: auto;
+    height: auto;
 }
+
+#message-box {
+    /* Text Styles */
+    font-family: "Instrument Serif", serif;
+    font-style: italic;
+    font-size: 2.5rem; /* 40px */
+    color: rgb(69,23,96);
+    text-align: center;
+    /* Layout */
+    width: 50%;
+    height: 50%;
+}
+
+/* Button Styles */
+button {
+    /* Text Styles */
+    font-family: 'Lexend Deca', san-serif;
+    color: #fff;
+    text-decoration: none;
+    /* Layout */
+    background-color: rgb(139,78,173);
+    border: none;
+    border-radius: 0.3125rem;
+    padding: 0.9375rem 2rem;
+    text-align: center;
+    margin: 0.25rem 0.125rem;
+    cursor: pointer;
+    /* Button "hover" effect speed */
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: rgb(149,108,173);
+}
+
+/* Typography */
+#logo {
+    font-family: "Bilbo", cursive;
+    color: rgb(171,126,69);
+    font-size: 2.8125rem;
+    text-align: center;
+    text-shadow: -1px -1px 0 #000,
+                -1px -1px 0 #000,
+                -1px -1px 0 #000,
+                -1px -1px 0 #000;
+}
+
