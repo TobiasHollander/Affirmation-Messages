@@ -23,5 +23,5 @@ A message generator program that outputs a new, random message every time a user
 * HTML
 
 ## Attribution
-* [Frame PNGs by Vecteezy]("https://www.vecteezy.com/free-png/frame")
-* [Banner PNGs by Vecteezy]("https://www.vecteezy.com/free-png/banner")
+* [Frame PNGs by Vecteezy](https://www.vecteezy.com/free-png/frame)
+* [Banner PNGs by Vecteezy](https://www.vecteezy.com/free-png/banner)
