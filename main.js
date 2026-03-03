@@ -1,4 +1,4 @@
-const affirmations = ["Just because it’s taking time doesn't mean it’s not happening",
+const affirmations = ["Just because it’s taking time doesn't mean it’s not happening.",
                         "Your life unfolds in proportion to your courage.",
                         "If you don’t like something, just take away its only power. Your attention.",
                         "If I keep showing up, then life will reward me.",
@@ -9,14 +9,25 @@ const affirmations = ["Just because it’s taking time doesn't mean it’s not h
                         "Life is only as magical and beautiful as the lens you see it through so, please remember, nothing will improve until your mind gives it a chance to.",
                         "The entire point of life is to take chances on dreams that seem crazy to most, but feel like destiny to you."]
 
-const button = document.getElementById('button');
+const button = document.getElementById('updateButton');
+const message = document.getElementById('message');
+let lastMessage = null; // tracks previous message in randomAffirmation function
 
 // Randomize Affirmation Message function
-const randomAffirmation = arry => {
-    let arryLength = arry.length;
-    let randomIndex = Math.floor(Math.random() * arryLength);
-    return arry[randomIndex]
-};
-// Changing Message function
+const randomAffirmation = () => {
+    let newMessage;
+    
+    // randomly selecting an affirmation from the affirmations array while preventing repeats in a row
+    do {
+        newMessage = affirmations[Math.floor(Math.random() * affirmations.length)];
+    } while (newMessage === lastMessage);
 
-// onclick Event function
+    lastMessage = newMessage; // updating lastMessage to prevent any repeats
+    return newMessage;
+};
+
+// Button Click Event Handler
+button.addEventListener('click', () => {
+    let newMessage = randomAffirmation();
+    message.textContent = `"${newMessage}"`;
+});
