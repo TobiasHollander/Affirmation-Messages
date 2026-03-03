@@ -14,9 +14,14 @@ A message generator program that outputs a new, random message every time a user
 * *"Life is only as magical and beautiful as the lens you see it through so, please remember, nothing will improve until your mind gives it a chance to."*
 * *"The entire point of life is to take chances on dreams that seem crazy to most, but feel like destiny to you."*
 
+## Website Preview
 ![Website Screenshot](websiteScreenGrab.jpg)
 
 ## Technologies
 * JavaScript
 * CSS
 * HTML
+
+## Attribution
+[Frame PNGs by Vecteezy]("https://www.vecteezy.com/free-png/frame")
+[Banner PNGs by Vecteezy]("https://www.vecteezy.com/free-png/banner")
